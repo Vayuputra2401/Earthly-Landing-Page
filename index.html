@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Earthly Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <header class="hero reveal">
+    <div class="container spacing reveal">
+      <h1 class="primary-title reveal">EARTHLY</h1>
+      <h2>Sustainable products at an affordable price</h2>
+      <a href="#" class="btn">See our products</a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="featured reveal ">
+      <div class="container reveal ">
+        <h2 class="section-title_1">The Sustainability Starter Kit</h2>
+        <div class="split">
+          <a href="#" class="featured__item">
+            <img src="img/approved.jpg" alt="" class="features_img">
+            <p class="featured__details"><span class="price"></span></p>
+          </a>
+          <a href="#" class="featured__item">
+            <img src="img/non toxic.png" alt="" class="features_img">
+            <p class="featured__details"><span class="price"></span></p>
+          </a>
+          <a href="#" class="featured__item">
+            <img src="img/leakproof.jpg" alt="" class="features_img">
+            <p class="featured__details"><span class="price"></span></p>
+          </a>
+          
+                
+
+        </div>
+      </div>
+      
+      
+    </section>
+
+
+    <section class="our-products">
+      <div class="container reveal">
+        <h2 class="section-title reveal">Our products</h2>
+
+        <article class="product shoe-red spacing reveal">
+          <img src="img/reusable-bamboo-straws.webp" alt="" class = "straws_img" >
+          <h3 class="product__title">Bamboo Straws</h3>
+          <p class="product__description">4 Reusable Bamboo straws for a sustainable environment</p>
+          <a href="" class="btn">Buy now</a>
+        </article>
+
+        <article class="product shoe-white shoe-left spacing reveal">
+          <img src="img/cup.webp" alt="" class="cups_img">
+          <h3 class="product__title">Reusable Cups</h3>
+          <p class="product__description">1 Plant Based Reusable Cup with 2 Lids </p>
+          <a href="" class="btn">Buy now</a>
+        </article>
+
+        <article class="product shoe-blue spacing reveal ">
+          <img src="img/bamboo-tooth.webp" alt="" class="toothbrush_image">
+          <h3 class="product__title_tooth">Bamboo Toothbrush</h3>
+          <p class="product__description">1 Bamboo Toothbrush for a sustainable environment</p>
+          <a href="" class="btn">Buy now</a>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="cta reveal">
+      <h1>Come and join us in this journey to make the earth green </h1>
+      <a href="" class="hero-btn">CONTACT US</a>
+    </section>
+
+    <section class="footer reveal">
+      <h3>"BELIEVE IN YOURSELF AND ALL THAT YOU ARE. <br> THAT THERE IS SOMETHING INSIDE YOU THAT IS GREATER THAN ANY OBSTACLE."
+        </h3>
+        <h4>- STEVE JOBS</h4>
+
+        <div class="icons reveal">
+          <a href = "https://www.instagram.com/ecell_rgipt/"><i class="fa fa-instagram"></i></a>
+                <a href = "https://www.linkedin.com/in/e-cell-rgipt-461705220/?originalSubdomain=in"><i class="fa fa-linkedin"></i></a>
+                <a href = "https://www.facebook.com/ecell.rgipt/"><i class="fa fa-facebook"></i></a>
+                <a href = "https://mobile.twitter.com/ecell_rgipt"><i class="fa fa-twitter"></i></a>
+        </div>
+        <p>Made by Pathikreet Chowdhury with love | <i class="fa fa-copyright"></i> 2022 | All rights reserved</p>
+    </section>
+
+  </main>
+
+  <script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal(){
+      var reveals = document.querySelectorAll('.reveal');
+
+      for(i = 0 ; i<reveals.length ; i++){
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+
+          var revealpoint = 50;
+          if(revealtop<windowheight-revealpoint){
+            reveals[i].classList.add('active');
+          }
+          else{
+            reveals[i].classList.remove('active');
+          }
+      }
+    }
+  </script>
+
+</body>
+
+</html>
